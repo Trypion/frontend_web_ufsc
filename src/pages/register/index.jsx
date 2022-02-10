@@ -2,10 +2,10 @@ import { LayoutComponets } from "../../components/layoutComponents"
 
 
 export const Register = () => {
-    [userna]
+    // [userna]
     return (
         <LayoutComponets>
-            <form className="login-form">
+            {/* <form className="login-form">
                 <span className="login-form-title">
                     Criar Conta
                 </span>
@@ -37,7 +37,7 @@ export const Register = () => {
                     <span className="txt1">Não possui conta?</span>
                     <Link className='txt2' to="/register">Criar conta.</Link>
                 </div>
-            </form>
+            </form> */}
         </LayoutComponets>
     )
 }
