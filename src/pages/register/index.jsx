@@ -2,6 +2,7 @@ import { LayoutComponets } from "../../components/layoutComponents"
 import {useState} from "react";
 import { Link } from 'react-router-dom';
 import  '../../assets/styles/login-register.css'
+import {DegradeButton} from "../../components/degradeButton";
 
 
 export const Register = () => {
@@ -45,7 +46,7 @@ export const Register = () => {
                 </div>
 
                 <div className="container-login-form-btn">
-                    <button className="login-form-btn">Registrar</button>
+                    <DegradeButton className="login-form-btn">Registrar</DegradeButton>
                 </div>
 
                 <div className="text-center">

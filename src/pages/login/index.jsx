@@ -1,8 +1,13 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import pingaImg from '../../assets/images/ping-a.png'
 import { LayoutComponets } from '../../components/layoutComponents';
+import {DegradeButton} from "../../components/degradeButton";
+
+
 import  '../../assets/styles/login-register.css'
+
+import pingaImg from '../../assets/images/ping-a.png'
+
 
 export const Login = () => {
     const [email, setEmail] = useState("")
@@ -35,7 +40,7 @@ export const Login = () => {
                 </div>
 
                 <div className="container-login-form-btn">
-                <button className="login-form-btn">Login</button>
+                    <DegradeButton className="login-form-btn">Login</DegradeButton>
                 </div>
 
                 <div className="text-center">
