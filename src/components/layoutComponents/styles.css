@@ -4,7 +4,7 @@
 }
  
 .container-login {
-    width: 100;
+    width: 100%;
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -22,5 +22,5 @@
     overflow: hidden;
     padding: 33px 55px 33px 55px;
 
-    box-shadow: 0 5px 10px 0px rgba(91, 40, 150, 0.2);
+    box-shadow: 0 5px 10px 0 rgba(91, 40, 150, 0.2);
 }
