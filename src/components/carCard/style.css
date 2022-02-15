@@ -1,0 +1,21 @@
+.car-card {
+    background: #333;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 7px 7px rgba(91, 40, 150, 0.2) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.car-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.car-card-button-wrapper {
+    min-height: 20px;
+    width: 80%;
+}
