@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import pingaImg from '../../assets/ping-a.png'
+import pingaImg from '../../assets/images/ping-a.png'
 import { LayoutComponets } from '../../components/layoutComponents';
+import  '../../assets/styles/login-register.css'
 
 export const Login = () => {
     const [email, setEmail] = useState("")
