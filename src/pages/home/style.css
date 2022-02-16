@@ -55,7 +55,16 @@
 .cars-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
-    justify-items: center;
+    grid-gap: 3vh;
     margin-bottom: 20px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+.cars-grid {
+    grid-template-columns: 1fr;
+
+}
+
+
 }

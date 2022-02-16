@@ -1,5 +1,5 @@
 .degrade-button {
-    font-size: 15px;
+    font-size: clamp(1px, 16px, 32px);
     border: none;
     border-radius: 10px;
     color: #fff;
@@ -17,7 +17,7 @@
     background: -o-linear-gradient(to left, #21d4fd, #b721ff);
     background: -moz-linear-gradient(to left, #21d4fd, #b721ff);
     background: linear-gradient(to left, #21d4fd, #b721ff);
-
+    overflow-x: hidden;
     padding: 0 20px;
 }
 
