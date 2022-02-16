@@ -1,13 +1,10 @@
-import { AppRouter } from './routes';
-import './styles.css'
-import {Navbar} from "./components/Navbar";
+import { AppRouter } from "./routes";
+import "./styles.css";
 
 export const App = () => {
-
   return (
-      <>
-        <Navbar/>
-        <AppRouter/>
-      </>
-    );
-}
+    <>
+      <AppRouter />
+    </>
+  );
+};

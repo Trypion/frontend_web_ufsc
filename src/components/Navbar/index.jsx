@@ -1,21 +1,32 @@
 import React from "react";
-import "./styles.css"
-import {DegradeButton} from "../degradeButton";
-import {Link} from "react-router-dom";
+import "./styles.css";
+import { DegradeButton } from "../degradeButton";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
-    return (<nav id="navbar">
-                <div id="navbar-container">
-                    <h1 className="logo">Ping-A</h1>
-                    <ul id="navbar-items">
-                        <li><a href="#">Início</a></li>
-                        <li><a href="#clients">Sobre</a></li>
-                        <li><a href="#gallery">Fotos</a></li>
-                    </ul>
-                    <div className="login-button-login">
-                        <DegradeButton>Fazer Login</DegradeButton>
-                    </div>
-                </div>
-            </nav>
-    )
-}
+  return (
+    <nav id="navbar">
+      <div id="navbar-container">
+        <Link to="/">
+          <h1 className="logo">Ping-A</h1>
+        </Link>
+        <ul id="navbar-items">
+          <li>
+            <Link to="/">Início</Link>
+          </li>
+          <li>
+            <Link to="/about">Sobre</Link>
+          </li>
+          <li>
+            <Link to="/">Fotos</Link>
+          </li>
+        </ul>
+        <div className="login-button-login">
+          <Link to="/login">
+            <DegradeButton>Fazer Login</DegradeButton>
+          </Link>
+        </div>
+      </div>
+    </nav>
+  );
+};

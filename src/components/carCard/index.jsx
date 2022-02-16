@@ -15,7 +15,7 @@ export const CarCard = ({car}) => {
             <img src={car.photo} alt="" />
             <h3>{car.model}</h3>
             <div className="car-card-button-wrapper">
-                <button onClick={() => setButtonPopup(true)}>Mais Informações</button>
+                <DegradeButton className="btn-primary" onClick={() => setButtonPopup(true)}>Mais Informações</DegradeButton>
             </div>
             <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
                 <img src={car.photo} alt="" />
