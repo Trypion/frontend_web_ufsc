@@ -11,7 +11,7 @@ export const AppRouter = () => {
                 <Route path="/login" exact element={<Login/>}></Route>
                 <Route path="/register" exact element={<Register/>}></Route>
                 <Route path="/" exact element={<Home/>}></Route>
-
+                <Route path="/infocar" exact element={<InfoCar/>}></Route>
 
             </Routes>
         </Router>
