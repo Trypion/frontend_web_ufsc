@@ -14,13 +14,13 @@ export const CarCard = ({car}) => {
         <div className="car-card">
             <img src={car.photo} alt="" />
             <h3>{car.model}</h3>
-            <h4>{car_price_formated}</h4>
-            <p>{car.description}</p>
             <div className="car-card-button-wrapper">
                 <button onClick={() => setButtonPopup(true)}>Mais Informações</button>
             </div>
-            <Popup trigger={buttonPopup}>
-                <h3>My popup</h3>
+            <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+                <img src={car.photo} alt="" />
+                <h3>{car.model}</h3>
+                <h4>{car_price_formated}</h4>
                 <p>{car.description}</p>
             </Popup>
         </div>

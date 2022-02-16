@@ -4,6 +4,7 @@ import {DegradeButton} from "../../components/degradeButton";
 
 import './style.css'
 import MareaPic from '../../assets/images/homol_cars/download.jpeg'
+import FuscaPic from '../../assets/images/homol_cars/VW-Fusca.jpg'
 import {CarCard} from "../../components/carCard";
 
 export const Home = () => {
@@ -16,10 +17,10 @@ export const Home = () => {
         description: "explosivo vai de 0 a 100 em segundos!!!"
         },
         {
-        model: 'Marea Turbo',
-        price: 200000,
-        photo: MareaPic,
-        description: "explosivo vai de 0 a 100 em segundos"
+        model: 'Fusca Bolado',
+        price: 400000,
+        photo: FuscaPic,
+        description: "Mais rápido que uma flecha!"
         },
         {
         model: 'Marea Turbo',
