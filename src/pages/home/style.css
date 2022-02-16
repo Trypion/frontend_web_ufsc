@@ -61,10 +61,10 @@
 }
 
 @media only screen and (max-width: 750px) {
-.cars-grid {
-    grid-template-columns: 1fr;
+    .cars-grid {
+        grid-template-columns: 1fr;
 
-}
+    }
 
 
 }
