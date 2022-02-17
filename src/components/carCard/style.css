@@ -20,6 +20,10 @@
     border-radius: 10px;
 }
 
+.image-card-home {
+    height: 17vh;
+}
+
 .car-card-button-wrapper {
     min-height: 20px;
     width: 80%;

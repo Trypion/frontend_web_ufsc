@@ -15,10 +15,7 @@ export const Navbar = () => {
             <Link to="/">Início</Link>
           </li>
           <li>
-            <Link to="/about">Sobre</Link>
-          </li>
-          <li>
-            <Link to="/">Fotos</Link>
+            <Link to="/register-car">Cadastrar carro</Link>
           </li>
         </ul>
         <div className="login-button-login">

@@ -51,9 +51,13 @@
     }
 
 
-
     #navbar-items li:nth-child(2) {
         border-top: 1px solid #333;
         border-bottom: 1px solid #333;
+    }
+
+    .login-button-login {
+        width: 80px;
+        height: 85%;
     }
 }
