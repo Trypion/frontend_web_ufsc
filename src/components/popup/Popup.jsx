@@ -6,13 +6,15 @@ function Popup(props) {
   return props.trigger ? (
     <div className="popup">
       <div className="popup-inner">
-        <DegradeButton
-          className="close-btn"
-          onClick={() => props.setTrigger(false)}
-        >
-          Fechar
-        </DegradeButton>
         {props.children}
+        <div className='button-wrapper'>
+            <DegradeButton
+              className="close-btn"
+              onClick={() => props.setTrigger(false)}
+            >
+              Fechar
+            </DegradeButton>
+        </div>
       </div>
     </div>
   ) : (

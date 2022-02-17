@@ -34,7 +34,7 @@ export const RegisterCars = () => {
     <div className="container d-flex align-items-center justify-content-center flex-column">
       <h1 className="">Cadastro de carros</h1>
 
-      <div className="card p-3 d-flex align-items-center justify-content-center flex-column">
+      <div id="container-register-car" className="card p-3 d-flex align-items-center justify-content-center flex-column">
         <h6>Preencha as informações do carro</h6>
 
         <form onSubmit={handleSubmit}>
