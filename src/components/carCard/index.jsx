@@ -16,7 +16,7 @@ export const CarCard = ({ car }) => {
   return (
     <div className="car-card">
       <img src={car.photo} className="image-card-home" />
-      <h3>{car.modelo}</h3>
+      <h3>{car.model}</h3>
       <div className="car-card-button-wrapper">
         <DegradeButton
           className="btn-primary"
