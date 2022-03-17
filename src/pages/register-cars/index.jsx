@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { DegradeButton } from "../../components/degradeButton";
-import CarsService from "../../services/cars";
+import { createCar } from "../../services/cars";
 
 import "./styles.css";
 
 export const RegisterCars = () => {
-  const navigate = useNavigate();   
+  const navigate = useNavigate();
   const [car, setCar] = useState({
     model: "",
     price: null,
@@ -18,9 +18,10 @@ export const RegisterCars = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("submit");
-    CarsService.addCar(car);
+    createCar(car).then(() => {
+      navigate("/");
+    });
     console.log("carro adicionado redirecionando...");
-    navigate(`/`);
   };
 
   const handleChange = (e) => {
@@ -34,7 +35,10 @@ export const RegisterCars = () => {
     <div className="container d-flex align-items-center justify-content-center flex-column">
       <h1 className="">Cadastro de carros</h1>
 
-      <div id="container-register-car" className="card p-3 d-flex align-items-center justify-content-center flex-column">
+      <div
+        id="container-register-car"
+        className="card p-3 d-flex align-items-center justify-content-center flex-column"
+      >
         <h6>Preencha as informações do carro</h6>
 
         <form onSubmit={handleSubmit}>

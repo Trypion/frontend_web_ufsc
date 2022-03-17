@@ -5,11 +5,13 @@ import { DegradeButton } from "../../components/degradeButton";
 import "./styles.css";
 import { CarCard } from "../../components/carCard";
 import { Link } from "react-router-dom";
-import CarsService from "../../services/cars";
+import { getAll } from "../../services/cars";
 
 export const Home = () => {
   useEffect(() => {
-    setCars(CarsService.getCars());
+    getAll().then(({ data }) => {
+      setCars(data);
+    });
   }, []);
   const [cars, setCars] = useState([]);
 
