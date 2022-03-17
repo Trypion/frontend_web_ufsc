@@ -1,0 +1,39 @@
+const express = require("express");
+const path = require("path");
+const spdy = require("spdy");
+const cors = require("cors");
+const compression = require("compression");
+const envsMiddleware = require("../envs.middleware");
+
+const app = express();
+
+const corsOptions = {
+  origin: "*",
+  methods: "GET",
+};
+
+app.use(compression({ threshold: 0 }));
+app.use(cors(corsOptions));
+
+app.use(express.static(path.join(__dirname, "../build"), { maxAge: "1d" }));
+
+app.get("/endpoints.json", envsMiddleware);
+
+app.get("/*", function (req, res) {
+  res.sendFile(path.join(__dirname, "../build", "index.html"));
+});
+
+const options = {
+  spdy: {
+    protocols: ["h2", "spdy/3.1", "http/1.1"],
+    plain: true,
+    ssl: false,
+  },
+};
+
+spdy.createServer(options, app).listen(9000, (err) => {
+  if (err) {
+    throw new Error(err);
+  }
+  console.log("Frontend is listening on port 9000.");
+});
