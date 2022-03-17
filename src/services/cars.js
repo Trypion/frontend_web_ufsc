@@ -15,3 +15,7 @@ export const findCar = async ({ id }) => {
 export const getAll = async () => {
   return api.get("/car");
 };
+
+export const deleteCar = async ({ id }) => {
+  return api.delete(`/car/${id}`);
+};
